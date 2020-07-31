@@ -6,6 +6,7 @@ import { sign } from './util/sign';
 import { verify } from './util/verify';
 import { sha1 } from './util/sha1';
 import { sha256 } from './util/sha256';
+import { work } from './util/work';
 
 export {
   pair,
@@ -14,5 +15,6 @@ export {
   sign,
   verify,
   sha1,
-  sha256
+  sha256,
+  work
 }
