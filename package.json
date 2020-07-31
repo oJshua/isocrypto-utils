@@ -1,0 +1,35 @@
+{
+  "name": "isocrypt-utils",
+  "version": "0.0.1",
+  "description": "Simple isomorphic crypto utils",
+  "main": "bundle/bundle.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "rollup -c",
+    "prepublish": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "webcrypto",
+    "crypto",
+    "sha",
+    "aes",
+    "pbkdf2"
+  ],
+  "author": "Josh Hundley <josh.hundley@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@peculiar/webcrypto": "^1.1.2",
+    "text-encoding": "^0.7.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "rollup": "^2.23.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0"
+  }
+}
