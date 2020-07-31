@@ -1,5 +1,7 @@
 # isocrypto-utils
 
+[![Build Status](https://travis-ci.com/oJshua/isocrypto-utils.svg?branch=master)](https://travis-ci.com/oJshua/isocrypto-utils)
+
 A simple set of cryptographic utility functions inspired/borrowed from the ones found in the [GUN](https://github.com/amark/gun) distributed database.
 
  - aeskey (generates a AES-GCM key)
