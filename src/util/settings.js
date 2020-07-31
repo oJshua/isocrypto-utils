@@ -7,7 +7,7 @@ export const pbkdf2 = {
 
 export const ecdsa = {
   pair: {name: 'ECDSA', namedCurve: 'P-256'},
-  sign: {name: 'ECDSA', hash: {name: 'SHA-256'}}
+  sign: {name: 'ECDSA', hash: { name: 'SHA-256' }}
 };
 
 export const ecdh = {
@@ -15,14 +15,14 @@ export const ecdh = {
 };
 
 // This creates Web Cryptography API compliant JWK for sign/verify purposes
-export function getJwk(pub, d){
+export function getJwk(pub, d) {
   pub = pub.split('.');
   var x = pub[0], y = pub[1];
   var jwk = {kty: "EC", crv: "P-256", x: x, y: y, ext: true};
   jwk.key_ops = d ? ['sign'] : ['verify'];
   if(d){ jwk.d = d }
   return jwk;
-};
+}
 
 export function keyToJwk(keyBytes) {
   const keyB64 = keyBytes.toString('base64');
