@@ -1,5 +1,5 @@
 {
-  "name": "isocrypt-utils",
+  "name": "isocrypto-utils",
   "version": "0.0.1",
   "description": "Simple isomorphic crypto utils",
   "main": "bundle/bundle.js",
